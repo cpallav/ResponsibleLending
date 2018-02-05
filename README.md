@@ -10,7 +10,7 @@ I have used Lending Club's loan-performance data set to study and predict borrow
 [Lending Club](https://www.lendingclub.com/) has been facilitating peer-to-peer lending by bringing together lenders and borrowers since 2007. They maintain and share [loan performance data](https://www.lendingclub.com/info/download-data.action) for all loans issued. The data includes loan data, non-personal borrower and credit report information. Every quarter, loan repayment and status are updated, along with the borrower's credit score information. This provides a rich data set to study and predict borrower default risk.
 
 
-![Sample Data](img/LC_Data.jpg "Sample Data")
+![alt text](img/LC_Data.jpg "Sample Data")
 
 
 ### Model 
