@@ -9,6 +9,9 @@ I have used Lending Club's loan-performance data set to study and predict borrow
 ### Data
 [Lending Club](https://www.lendingclub.com/) has been facilitating peer-to-peer lending by bringing together lenders and borrowers since 2007. They maintain and share [loan performance data](https://www.lendingclub.com/info/download-data.action) for all loans issued. The data includes loan data, non-personal borrower and credit report information. Every quarter, loan repayment and status are updated, along with the borrower's credit score information. This provides a rich data set to study and predict borrower default risk.
 
+![Sample Data](img/LC_Data.jpg)
+
+
 ### Model 
 The Fair Credit Equality Act makes it illegal for financial lenders to discriminate against borrowers based on a number of factors including age, gender, race, location. Regulators examine lenders' credit approval models to ensure compliance with the law. Moreover, when declining a person's credit application, lenders need to provide an explicit reason for their decision. This rules out models that lack clear interpretability. So I have built and compared performance of models using a number of different Machine-Learning methods including Logistic Regression, Naive Bayes, Gradient Boosted Trees, Random Forests and Support Vector Machines. This allows me to investigate the prediction accuracy between these methods that have decreasing interpretability and bias.
 
@@ -37,6 +40,3 @@ Late payments have a big impact on credit -- Alerts/Autopay to avoid careless la
 Short credit history show higher delinquency -- Keep oldest credit card account open (preferably no annual-fee)
 
 Large existing debt obligations deter lenders -- Reduce debt before applying for more
-
-
-### About Me
