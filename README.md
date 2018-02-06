@@ -9,32 +9,39 @@ I have used Lending Club's loan-performance data set to study and predict borrow
 ### Data
 [Lending Club](https://www.lendingclub.com/) has been facilitating peer-to-peer lending by bringing together lenders and borrowers since 2007. They maintain and share [loan performance data](https://www.lendingclub.com/info/download-data.action) for all loans issued. The data includes loan data, non-personal borrower and credit report information. Every quarter, loan repayment and status are updated, along with the borrower's credit score information. This provides a rich data set to study and predict borrower default risk.
 
+![](img/LC_Data_Slide.png "Sample Data")
 
-![](img/LC_Data2.png "Sample Data")
 
-
-### Model 
+### Model Choice 
 The Fair Credit Equality Act makes it illegal for financial lenders to discriminate against borrowers based on a number of factors including age, gender, race, location. Regulators examine lenders' credit approval models to ensure compliance with the law. Moreover, when declining a person's credit application, lenders need to provide an explicit reason for their decision. 
-
 
 ![](img/EqualCreditOppActSlide.png "Equal Credit Opportunity Act")
 
-
 This rules out models that lack clear interpretability. So I have built and compared performance of models using a number of different Machine-Learning methods including Logistic Regression, Naive Bayes, Gradient Boosted Trees, Random Forests and Support Vector Machines. This allows me to investigate the prediction accuracy between these methods that have decreasing interpretability and bias.
 
-I have used data from over 725,000 loans issued from Jan-2016 to Sep-2017. Each loan has 149 columns of data about the loan, non-personal borrower and credit report information. Loan data includes information like the loan amount, issue month, purpose, interest rate, repayment term and installment. Borrower data includes information about the borrower's income, employment, home ownership status and geographic location (3-digit zipcode and state). Credit report information includes the debt balances, limits and utilization across the different types of credit instruments (mortgage, personal installment loans, credit lines and bank cards), along with the FICO score at the time of loan origination. I studied the correlation of this data with borrower default, and then selected some of the strong predictors. I also engineered innovative new features by combining different data components to identify red flags in the loans.
 
+### Feature Engineering
+I have used data from over 725,000 loans issued from Jan-2016 to Sep-2017. Each loan has 149 columns of data about the loan, non-personal borrower and credit report information. Loan data includes information like the loan amount, issue month, purpose, interest rate, repayment term and installment. Borrower data includes information about the borrower's income, employment, home ownership status and geographic location (3-digit zipcode and state). Credit report information includes the debt balances, limits and utilization across the different types of credit instruments (mortgage, personal installment loans, credit lines and bank cards), along with the FICO score at the time of loan origination. I studied the correlation of this data with borrower default, and then selected some of the strong predictors. I also engineered innovative new features by combining different data components to identify red flags in the loans.
 
 ![](img/FeatureEnggSlide.png "Feature Engineering")
 
 
-Class balancing since default rate is under 4%
+### Model Trade-off and Optimization
+Since the borrower default rate seen in the data is about 5%, I used the SMOTE package in Python to balance the *Current* and *Default* classes by oversampling the *Default* class data. This helps the model improve its *Recall* metric by reducing the number of false negatives.
 
-Trade-off between precision and recall 
+In optimizing the model performance, there is a trade-off between the *Precision* and *Recall* metrics. In this context, a *High-Recall Low-Precision* percentage means that fewer borrowers will be approved for loans and will result in lost revenue for the lender. However, in the alternate *High-Precision Low-Recall* scenario, we will have a higher approval rate for borrowers but significantly more losses due to unexpected defaults. A lender would prefer to have the *High-Recall Low-Precision* scenario as a more predictable default rate will give him greater certainly in cash-flows and also allow him to offer the borrower a better interest rate after accounting for default losses.
 
-Graphs/Tables by model
+![](img/TradeoffSlide.png "Trade-Off")
 
+
+### Model Performance
 Commentary on model performance
+
+![](img/PerformanceTableSlide.png "Performance Table")
+
+
+![](img/ROCCurveSlide.png "ROC Curves")
+
 
 ### Insights for Lenders
 
