@@ -22,8 +22,13 @@ The Fair Credit Equality Act makes it illegal for financial lenders to discrimin
 
 This rules out models that lack clear interpretability. So I have built and compared performance of models using a number of different Machine-Learning methods including Logistic Regression, Naive Bayes, Gradient Boosted Trees, Random Forests and Support Vector Machines. This allows me to investigate the prediction accuracy between these methods that have decreasing interpretability and bias.
 
+I have used data from over 725,000 loans issued from Jan-2016 to Sep-2017. Each loan has 149 columns of data about the loan, non-personal borrower and credit report information. Loan data includes information like the loan amount, issue month, purpose, interest rate, repayment term and installment. Borrower data includes information about the borrower's income, employment, home ownership status and geographic location (3-digit zipcode and state). Credit report information includes the debt balances, limits and utilization across the different types of credit instruments (mortgage, personal installment loans, credit lines and bank cards), along with the FICO score at the time of loan origination. I studied the correlation of this data with borrower default, and then selected some of the strong predictors. I also engineered innovative new features by combining different data components to identify red flags in the loans.
 
-Too much data, too few insights -- Feature Engineering
+
+![](img/FeatureEnggSlide.png "Feature Engineering")
+
+
+Class balancing since default rate is under 4%
 
 Trade-off between precision and recall 
 
