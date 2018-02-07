@@ -45,18 +45,20 @@ Commentary on model performance
 
 ### Insights for Lenders
 
-Borrowers default early into a loan rather than later -- Sliding interest rate product
+![](img/SlidingRateInsight.png "Sliding Rate Product")
 
-Credit Card Repayment, Debt Consolidation and Home Improvement loans have lower delinquency than Medical, Moving and Vacation loans -- Differential interest rate based on loan purpose
+![](img/PurposeBasedRateInsight.png "Differential Interest Rate Product")
 
-Large number of financial inquiries and accounts open indicate increasing financial stress on borrower -- Pre-emptive action by lenders to follow up with borrows to prevent default (possibly by restructuring or changing terms)
+![](img/PreemptiveActionInsight.png "Pre-emptive Action")
+
 
 ### Advice for Borrowers
 
-Long employment length indicates stability in income -- Avoid changing employer just before applying for new credit especially mortgage
+![](img/ChangingJobsAdvice.png "Changing Jobs Advice")
 
-Late payments have a big impact on credit -- Alerts/Autopay to avoid careless late payments
+![](img/AvoidLatePaymentAdvice.png "Avoid Late Payment Advice")
 
-Short credit history show higher delinquency -- Keep oldest credit card account open (preferably no annual-fee)
 
-Large existing debt obligations deter lenders -- Reduce debt before applying for more
+#### Short credit history show higher delinquency -- Keep oldest credit card account open (preferably no annual-fee)
+
+#### Large existing debt obligations deter lenders -- Reduce debt before applying for more
