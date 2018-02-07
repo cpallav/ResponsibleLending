@@ -35,13 +35,19 @@ In optimizing the model performance, there is a trade-off between the *Precision
 
 
 ### Model Performance
-Commentary on model performance
+I have used a single factor (FICO score only) model as the baseline to compare model performance against the multi-factor models. This may seem simplistic but are used by luxury goods rental companies who lack the resources to build and maintain a larger predictive model.
+
+After the models were fit on the class-balanced training dataset, the performance on the test dataset was evaluated along a number of metrics including Precision, Recall, F1 Score, Matthews Correlation Coefficient, and the ROC Area Under the Curve. The results are shown in the tables and graphs below.
 
 ![](img/PerformanceTableSlide.png "Performance Table")
 
-
 ![](img/ROCCurveSlide.png "ROC Curves")
 
+The multi-factor model performs significantly better than the single-factor model along all methods, with the F1 score in the 22-32% range versus 10-12% range. The Matthews Correlation Coefficient is also around 25% for the multi-factor models versus about 6% for the single-factor models.
+
+The multi-factor model results show that the Logistic Regression has the best performance in terms of *Recall* but its *Precision* is lower than the Gradient Boosted Trees and Random Forests classifiers. The F1 score and Matthews Correlation Coefficient measure overall performance balancing out the Precision and Recall, and are better for the Gradient Boosted Trees and Random Forests classifiers than the Logistic Regression.
+
+I then studied the multi-factor Logistic Regression model to derive some interesting insights into borrower default behavior. These can be used by lenders to introduce new products and establish default reduction measures for borrowers. The model also provides advice for borrowers to improve their creditworthiness through simple measures.  
 
 ### Insights for Lenders
 
