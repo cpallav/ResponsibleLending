@@ -57,14 +57,12 @@ I then studied the multi-factor Logistic Regression model to derive some interes
 
 ![](img/PreemptiveActionInsight.png "Pre-emptive Action")
 
-
 ### Advice for Borrowers
 
 ![](img/ChangingJobsAdvice.png "Changing Jobs Advice")
 
 ![](img/AvoidLatePaymentAdvice.png "Avoid Late Payment Advice")
 
+![](img/KeepOldCCOpenAdvice.png "Keep Oldest Credit Line Open Advice")
 
-#### Short credit history show higher delinquency -- Keep oldest credit card account open (preferably no annual-fee)
-
-#### Large existing debt obligations deter lenders -- Reduce debt before applying for more
+![](img/PayDownDebtAdvice.png "Pay Down Debt Advice")
