@@ -40,12 +40,12 @@ The multi-factor model results show that the Logistic Regression has the best pe
 
 I then studied the multi-factor Logistic Regression model to derive some interesting insights into borrower default behavior. These can be used by lenders to introduce new products and establish default reduction measures for borrowers. The model also provides advice for borrowers to improve their creditworthiness through simple measures.  
 
-### Insights for Lenders
+
+## Insights for Lenders
 ![](img/SlidingRateInsight.png "Sliding Rate Product")
 ![](img/PurposeBasedRateInsight.png "Differential Interest Rate Product")
 ![](img/PreemptiveActionInsight.png "Pre-emptive Action")
-
-### Advice for Borrowers
+## Advice for Borrowers
 ![](img/ChangingJobsAdvice.png "Changing Jobs Advice")
 ![](img/AvoidLatePaymentAdvice.png "Avoid Late Payment Advice")
 ![](img/KeepOldCCOpenAdvice.png "Keep Oldest Credit Line Open Advice")
